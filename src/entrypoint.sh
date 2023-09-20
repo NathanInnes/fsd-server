@@ -7,6 +7,3 @@ nohup /var/fsd/fsd start
 
 # Start your Python script in the background (replace with your script name) and redirect output to /var/fsd/metar.log
 nohup python3 /var/fsd/metar.py
-
-# Keep the script running to keep the container running
-tail -f /dev/null
