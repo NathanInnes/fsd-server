@@ -55,7 +55,7 @@ jobs:
             # Login to registry
             echo ${{ secrets.GITHUB_TOKEN }} | docker login -u ${{ github.actor }} --password-stdin ghcr.io
             # Pull latest image
-            docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.ref }}
+            docker pull ${{ env.REGISTRY }}/nathaninnes/fsd-server:master
             # Stop running container
             docker stop fsd-server
             # Remove old container
