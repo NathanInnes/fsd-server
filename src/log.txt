@@ -1,0 +1,8 @@
+01-09-123 01:01:20 : Booting server
+01-09-123 01:01:20 FSD: Reading certificates from 'cert.txt'
+01-09-123 01:01:20 FSD: Booting port 6809 (client interface)
+01-09-123 01:01:20 FSD: Booting port 3011 (server interface)
+01-09-123 01:01:20 FSD: Booting port 3010 (system management interface)
+01-09-123 01:01:20 FSD: No 'allowfrom' found, allowing everybody on the server port
+01-09-123 01:01:20 FSD: We are up
+01-09-123 01:01:21 FSD: ** METAR: Could not lookup METAR host name weather.noaa.gov.

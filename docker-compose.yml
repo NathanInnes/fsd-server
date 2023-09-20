@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  fsd-server:
+    build: .
+    volumes: 
+      - ./src:/var/fsd
+    ports: 
+      - "3010:3010"
+      - "3011:3011"
+      - "6809:6809"
+    networks: 
+      - fsd-net
+
+networks:
+  fsd-net:
