@@ -1,5 +1,7 @@
 #!/bin/sh
 
+tail -f /var/fsd/log.txt /var/fsd/whazzup.txt &
+
 pip3 install --user requests
 
 # Start the fsd application in the background and redirect output to /var/fsd/fsd.log
