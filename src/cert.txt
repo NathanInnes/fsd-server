@@ -14,9 +14,9 @@
 ; 12	Administrator
 ;
 ; <vid> <pwd> <adminrank>
-; adminrank : de 0 a 12 (0 account desactivé)
+; adminrank : de 0 a 12 (0 account desactivï¿½)
 ; 
-111111 michael 12
+111111 password 12
 222222 password 12
 333333 password 12
 444444 password 12

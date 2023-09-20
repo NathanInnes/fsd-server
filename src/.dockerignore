@@ -1,3 +1,7 @@
 .cache
 .local
 *.log
+log.txt
+metar.txt
+whazzup.txt
+adminhelp.txt
