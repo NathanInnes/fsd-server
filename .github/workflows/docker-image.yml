@@ -54,12 +54,22 @@ jobs:
           script: |
             # Login to registry
             echo ${{ secrets.GITHUB_TOKEN }} | docker login -u ${{ github.actor }} --password-stdin ghcr.io
+            
+            # Stop running container
+            docker stop $(docker ps -q)
+            
+            # Remove old container
+            docker rm -f $(docker ps -aq)
+            
+            # Remove all Docker volumes
+            docker volume prune -f
+            
+            # Remove all Docker images
+            docker system prune -a --volumes --force
+            
             # Pull latest image
             docker pull ${{ env.REGISTRY }}/nathaninnes/fsd-server:master
-            # Stop running container
-            docker stop fsd-server
-            # Remove old container
-            docker rm fsd-server
+            
             # Run a new container from a new image
             docker run -d \
             --restart always \
